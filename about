@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - If I Must Die,</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+<style>
+  /* Global styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    position: relative;
+  }
+  header {
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    width: 100%; /* Full width */
+  }
+  .title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3em;
+    margin: 0;
+  }
+  .subtitle {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .subheading {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .instruction-container {
+    max-width: 88%; /* Adjusted max-width */
+    margin-left: 12%; /* Increased left margin */
+    margin-right: 12%; /* Increased right margin */
+  }
+  .instruction {
+    font-size: 2em; /* Further increased font size */
+    text-align: justify;
+    margin: 40px 0; /* Kept the margin the same */
+  }
+  footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Full width */
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  iframe {
+    border-radius: 12px;
+    margin: 40px 0; /* Added margin */
+  }
+</style>
+
+</head>
+<body>
+
+<header onclick="goToHomepage()">
+  <div class="title">If I Must Die,</div>
+  <div class="subtitle">a death conscious card game</div>
+</header>
+
+<div class="subheading">About</div>
+<div class="instruction-container">
+  <p class="instruction">You are invited to reflect on impermanence by acknowledging you are equally living and dying everyday. Beyond simply accepting death though, critically engage with the systems and conditions that lead to deaths. Allow death-life consciousness to serve as a gateway to fully be here now.</p>
+  <div class="subheading">How to Play</div>
+  <p class="instruction">You can play solo, in pairs, or in groups. Each player takes turns drawing a card from the deck.</p>
+  <p class="instruction">Read aloud the prompt or question on the card. Allow a moment for reflection.</p>
+  <p class="instruction">Contemplate the question and respond in whatever way serves you (i.e verbally, in written form, and/or through movement, art, etc.)</p>
+  <div class="subheading">Activity Tips</div>
+  <p class="instruction">Before beginning the activity, take a moment to set an intention—this helps create a mindful space and personalizes your experience, fostering deeper reflections on the theme of mortality throughout the game.</p>
+  <p class="instruction">As you wrap up the activity, think about how you will integrate the reflections. Have a closing exercise prepared to properly integrate the activity (i.e mindful breathing, a stretch, journaling).</p>
+  <p class="instruction">Consider locating an anchor (i.e. pillow, a grounding word, lavender oil essence) in your physical or emotional space and return to the anchor if overwhelmed.</p>
+  <p class="instruction">Encourage a non-judgmental and supportive environment to foster open conversations.</p>
+  <p class="instruction">Respect the comfort levels of all participants; some may prefer not to share their reflections.</p>
+  <p class="instruction">Emphasize that there are no right or wrong answers – it's about personal reflection and exploration.</p>
+  <p class="instruction">Pace yourself, take breaks if need be, and welcome uncomfortable feelings that may arise.</p>
+  <p class="instruction">Always breathe.</p>
+</div>
+
+<!-- Added Built by Nancy Uddin -->
+<div style="position: absolute; bottom: 20px; right: 20px; font-family: 'Nunito', sans-serif; font-size: 0.8em; color: #000;">Built by Nancy Uddin</div>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7B94qrIFbxZdo08FXKFnDb?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<footer style="width: 100%;"> <!-- Full width -->
+  <div class="footer">
+    <a href="index.html">Back to Homepage</a>
+  </div>
+</footer>
+
+<script>
+  function goToHomepage() {
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
