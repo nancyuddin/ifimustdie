@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>If I Must Die,</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+<style>
+  /* Global styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    position: relative;
+  }
+  header {
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    width: 100%; /* Full width */
+  }
+  .title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3em;
+  }
+  .subtitle {
+    font-size: 1.2em;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 300px);
+  }
+  .card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid #000;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  .card p {
+    margin: 0;
+    padding: 20px;
+    font-size: 2em;
+    color: #000;
+    word-wrap: break-word;
+  }
+  footer {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Full width */
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .built-by {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8em;
+    color: #000;
+  }
+</style>
+
+</head>
+<body>
+
+<header>
+  <div class="title">If I Must Die,</div>
+  <div class="subtitle">a death conscious card game</div>
+</header>
+
+<div class="card-container">
+  <div class="card" onclick="toggleCard()">
+    <p>If I Must Die,</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer">
+    <a href="about.html">About</a>
+  </div>
+</footer>
+
+<!-- Added Built by Nancy Uddin -->
+<div class="built-by">Built by Nancy Uddin</div>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/7B94qrIFbxZdo08FXKFnDb?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<script>
+  let flipped = false;
+
+  function toggleCard() {
+    const card = document.querySelector('.card');
+    
+    if (flipped) {
+      card.innerHTML = `
+        <p>If I Must Die,</p>
+      `;
+    } else {
+      const options = [
+        "Finish the prompt: If I were to die, I want you to know…",
+        "What are you afraid to do? What risks would you need to take to do it? What is worth doing, knowing you will die one day?",
+        "What questions or uncertainties about life, death, or the afterlife do you grapple with? How do these uncertainties shape your worldview?",
+        "What are you afraid to think about or express? What aspects of death do you find most frightening? How can acknowledging these fears change your perspective?",
+        "How can you ease the fears?",
+        "How will you face (embrace?) all the things to come? How will you move through it all?",
+        "What are you denying yourself? Why?",
+        "What internal and external shifts do you want?",
+        "Have you considered your end-of-life preferences? What values or beliefs would you like honored during your final moments?",
+        "How can you communicate your end-of-life wishes with loved ones?",
+        "How does awareness of mortality shape your relationships? Is there someone you'd like to express gratitude or make amends with?",
+        "How does the awareness of mortality influence your perception of life's purpose? What gives your life meaning and fulfillment?",
+        "What kind of impact, impression, and rhythm do you want to share with the world or with those around me?",
+        "What are you grateful for in your life? How can you express that gratitude?",
+        "Are there any unresolved issues or regrets you need to address or make peace with before dying?",
+        "How can you deepen your connections with loved ones?",
+        "Since you are dying, how are you living?",
+        "How can you cultivate acceptance of the impermanence of life, allowing yourself to live more fully in the present?",
+        "What gives your life meaning, and how can you continue to engage with those sources of meaning, even in the face of mortality? What parts of your life deserve more depth and meaning? What parts deserve more softness?",
+        "What do you intend to be/do on your last breath?",
+        "Who do you need to apologize to? Who do you need to thank? Who do you need to say 'I love you' to? Who do you need to let go of? Who do you need to forgive? Who do you need to grieve?",
+        "What do you long for? You are entitled to longing, but you are not entitled to certainty.",
+        "What do you have to lay to rest? How will you do this?",
+        "Who is no longer here, and what are the things you yearn to say to them?",
+        "Who is still here? What are the things you can (still) say to them? Pour into them.",
+        "What impact did experiencing loss have on your heart and mind?",
+        "Where (in your body) do you feel paralyzed, heavy, or gone? What are sensations that help you return to your body?",
+        "What is the sensation of grief?",
+        "What visual or sonic loops related to loss are running in your mind?",
+        "What support systems or resources do you need during this period of grieving? How can you access the support?",
+        "Recall memories and stories of the one(s) you can no longer physically reach.",
+        "What rituals or practices can you create to honor the memory of those you cannot physically reach?",
+        "How can you cultivate resilience and find meaning or purpose amidst your loss?",
+        "Tell me about the last time you felt embodiment.",
+        "Offer a prayer.",
+        "What has grief taught you?",
+        "What is eternal to you? What is temporary? Is there any overlap?",
+        "What practices or rituals could help you celebrate life more fully in the face of mortality?",
+        "How will you fight for those who are alive?",
+        "How do you practice joy and celebrate impermanence?",
+        "What are the reasons to keep going? How will you continue?",
+        "How can you embrace and process your emotions while allowing yourself to grieve fully?",
+        "How can you nurture and care for yourself during this grieving process?",
+        "Give someone you love a call.",
+        "Locate an inanimate object or a cosmic entity and put your grief in it (i.e., spot the moon and ask the moon to hold your grief).",
+        "Have you considered moving slower?"
+      ];
+      const randomIndex = Math.floor(Math.random() * options.length);
+      const newText = options[randomIndex];
+      const fontSize = newText.length > 60 ? '1em' : '1.5em';
+      card.innerHTML = `
+        <p class="title">If I Must Die,</p>
+        <p class="subtitle" style="font-size: ${fontSize}">${newText}</p>
+      `;
+    }
+    
+    flipped = !flipped;
+  }
+</script>
+
+</body>
+</html>
+
+
